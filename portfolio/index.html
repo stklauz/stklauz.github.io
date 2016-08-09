@@ -1,0 +1,14 @@
+---
+layout: portfolio
+title:  "Portfolio"
+---
+<h1 class="ttl-bld-g">Portfolio</h1>
+
+<article class="post-list">
+  {% for post in site.posts %}
+    <section>
+      <a href="#{{post-title}}" class="a-blk"><h2 class="ttl-bld">{{ post.title }}</h2></a>
+      <div id="{{ post.title }}" class="post-content paragraph">{{ post.content }}</div>
+    </section>
+  {% endfor %}
+</article>

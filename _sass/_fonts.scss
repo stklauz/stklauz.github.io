@@ -1,0 +1,64 @@
+h1 {
+  font-size:4rem;
+}
+
+%ttl{
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.ttl-bld{
+  @extend %ttl;
+  &-k{
+    color: #000;
+    @extend %ttl;
+  }
+  &-gy{
+    color:$grey;
+    @extend %ttl;
+  }
+  &-g{
+    color: $green;
+    @extend %ttl;
+  }
+}
+h2{
+  color:$green;
+  @extend %ttl;
+}
+
+.ttl-xs, h2{
+  font-size:1rem;
+}
+.ttl-xm{
+  font-size: 1.3rem;
+}
+.ttl-xl{
+  font-size:1.5rem;
+}
+
+main h1{
+  font-size: 1.1rem;
+}
+h3, h4{
+  font-size:1rem;
+  text-transform: lowercase;
+  font-weight: 400;
+  color: $grey;
+}
+
+.paragraph {
+    p {
+    font-family: $opensans;
+    margin: 1rem 0;
+  }
+    p:first-child{
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+  span{
+    font-family: $montserrat;
+    font-size: 2rem;
+    color: $green;
+  }
+}

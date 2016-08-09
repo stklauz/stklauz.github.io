@@ -1,0 +1,90 @@
+main{
+  width: 70%;
+  margin: 0 0 0 30%;
+  padding: 2.7rem 10% 2rem 5%;
+
+  h1{
+    margin-bottom: 4rem;
+  }
+  h2{
+    margin:3rem 0 1rem;
+  }
+
+  .float{
+    float:left;
+    width:50%;
+  }
+  .clearfix{
+    clear: both;
+    display: table;
+  }
+
+  .sub-ttl{
+    padding:1rem 1rem;
+    border: 1.5px solid #fff;
+    color:#fff;
+  }
+
+  .padding{
+    padding:1rem 1rem 0;
+  }
+  h4, ul li:last-child{
+    margin-bottom: 1rem;
+  }
+}
+
+.timeline{
+  padding: 2rem 1.5rem;
+  color: $grey;
+
+  .tml-line{
+    border-left: 3px solid $green;
+
+    &:last-child{
+      border-left: 3px solid transparent;
+    }
+  }
+  .tml-content-xs{
+    transform:translate(0, -2rem);
+    padding:0.7rem 1.5rem;
+
+    &::before{
+      content:"";
+      width:0.5rem;
+      height:0.5rem;
+      background: #fff;
+      border-radius:0.5rem;
+      border: 3px solid $green;
+      position:absolute;
+      transform:translate(-2rem, 0.5rem);
+    }
+  }
+  .tml-content-xl{
+    transform:translate(0, -2rem);
+    padding:0.7rem 1.5rem;
+
+    &::before{
+      content:"";
+      width:1rem;
+      height:1rem;
+      background: #fff;
+      border-radius:1rem;
+      border: 3px solid $green;
+      position:absolute;
+      transform:translate(-2.3rem, 0.1rem);
+    }
+  }
+
+  .tml-content-xl, .tml-content-xs{
+    p:last-child{
+      color: #000;
+    }
+  }
+}
+
+.social a {
+  margin-right: 2rem;
+  &:last-child{
+    margin-right: 0;
+  }
+}
