@@ -4,6 +4,7 @@ a base for designing / developing out in the open.
 With this project I have two main goals:
 
 1 . To build my portfolio in an inclusive and engaging way, having both projects that englobe UX / UI & code.
+
 2 . To have a base for other people to play around and build their own design / code portfolios in a open way.
 
 ### Open Design
