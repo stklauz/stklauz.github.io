@@ -1,4 +1,21 @@
-﻿var webpack = require('webpack');
+const path = require('path');
+
+module.exports = {
+    // where files are coming from
+    entry: './src/scripts/app.js',
+
+    // where file will be outputed to
+    output: {
+        // i had to require path to specify the project's root
+        path: path.resolve(__dirname, 'bin'),
+
+        // create a file named bundle
+        filename: 'bundle.js'
+    }
+};
+
+
+/*var webpack = require('webpack');
 var path = require('path');
 
 // Plugin
@@ -49,4 +66,4 @@ var config = {
     ]
 };
 
-module.exports = config;
+module.exports = config; */
