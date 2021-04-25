@@ -18,6 +18,7 @@ html {
   @media (min-width: 600px) {
     html {
       font-size: 16px; } }
+
 body {
   -webkit-text-size-adjust: 100%; }
 
@@ -45,6 +46,7 @@ blockquote {
   @media (min-width: 600px) {
     blockquote {
       padding: 0 5rem 0 1.25rem; } }
+
 img {
   display: block;
   margin: 0 0 1rem;
@@ -490,7 +492,8 @@ footer {
   color: #555;
   display: block;
   padding: 2rem 0; }
-  .catalogue-item:hover .catalogue-line, .catalogue-item:focus .catalogue-line {
+  .catalogue-item:hover .catalogue-line,
+  .catalogue-item:focus .catalogue-line {
     width: 5rem; }
   .catalogue-item:last-child {
     border: 0; }
@@ -515,8 +518,5 @@ footer {
   border-top: 0.2rem solid #353535;
   display: block;
   width: 2rem; }
-
-.article-discussion {
-  margin: 0; }
 
 /*# sourceMappingURL=style.css.map */
