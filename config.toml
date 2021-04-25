@@ -1,0 +1,14 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "making things"
+sectionPagesMenu = "main"
+summaryLength = 10
+
+
+# Theme Settings
+theme = "tale"
+[params]
+  Author = "Klauz" # Add the name of the author (this theme only supports one author)
+[author]
+  name = "Cláudia Carvalho" # Used by the foot copyright
+[menu]
