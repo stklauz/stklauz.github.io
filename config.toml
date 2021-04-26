@@ -2,7 +2,7 @@ baseURL = "https://stklauz.github.io/"
 languageCode = "en-us"
 title = "making things"
 sectionPagesMenu = "main"
-summaryLength = 10
+summaryLength = 20
 
 
 # Theme Settings

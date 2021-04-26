@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -12,12 +13,12 @@ body {
   padding: 0; }
 
 html {
-  font-family: "Libre Baskerville", "Times New Roman", Times, serif;
-  font-size: 14px;
+  font-family: "Merriweather", "Times New Roman", Times, serif;
+  font-size: 16px;
   overflow-y: scroll; }
   @media (min-width: 600px) {
     html {
-      font-size: 16px; } }
+      font-size: 18px; } }
 body {
   -webkit-text-size-adjust: 100%; }
 
@@ -112,8 +113,16 @@ pre code {
     margin: 0 auto 3rem;
     width: 4rem; }
   .post p {
-    margin: 0 0 1rem;
+    margin: 0 0 1.5rem;
     text-align: justify; }
+  .post hr {
+    border: none;
+    margin: 0 0 1rem; }
+    .post hr::before {
+      content: '***';
+      display: block;
+      text-align: center;
+      color: #aaa; }
   .post a:hover {
     text-decoration: underline; }
   .post img {
