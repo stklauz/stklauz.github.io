@@ -30,7 +30,8 @@ h5,
 h6 {
   color: #353535;
   font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
-  line-height: normal; }
+  line-height: normal;
+  margin-top: 2em; }
 
 a {
   color: #4a9ae1;
@@ -49,10 +50,19 @@ blockquote {
 img {
   display: block;
   margin: 0 0 1rem;
-  max-width: 100%; }
+  max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px 0px #aaa; }
 
 td {
   vertical-align: top; }
+
+.post li p {
+  margin: 0;
+  text-align: left; }
+
+.post li {
+  margin-bottom: 1rem; }
 
 pre,
 code {

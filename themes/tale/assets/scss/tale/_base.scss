@@ -34,6 +34,7 @@ h6 {
   color: $default-shade;
   font-family: $sans-serif;
   line-height: normal;
+  margin-top: 2em;
 }
 
 a {
@@ -60,8 +61,20 @@ img {
   display: block;
   margin: 0 0 1rem;
   max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px 0px #aaa
 }
 
 td {
   vertical-align: top;
+}
+
+.post li p {
+  margin:0;
+  text-align: left;
+
+}
+
+.post li {
+  margin-bottom: 1rem;
 }
