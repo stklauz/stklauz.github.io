@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>making things</title>
-    <link>https://stklauz.github.io/</link>
-    <description>Recent content on making things</description>
+    <title>Product on making things</title>
+    <link>https://stklauz.github.io/tags/product/</link>
+    <description>Recent content in Product on making things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 May 2021 08:47:11 +0100</lastBuildDate><atom:link href="https://stklauz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 May 2021 08:47:11 +0100</lastBuildDate><atom:link href="https://stklauz.github.io/tags/product/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Understanding business lifecycles</title>
       <link>https://stklauz.github.io/2021-understanding-business-lifecycles/</link>
@@ -14,15 +14,6 @@
       
       <guid>https://stklauz.github.io/2021-understanding-business-lifecycles/</guid>
       <description>To better understand the decisions your company and leadership are taking, it could be useful to start understanding your company&amp;rsquo;s context.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://stklauz.github.io/about/</link>
-      <pubDate>Sat, 24 Apr 2021 08:47:11 +0100</pubDate>
-      
-      <guid>https://stklauz.github.io/about/</guid>
-      <description>About myself and about this blog</description>
     </item>
     
   </channel>
