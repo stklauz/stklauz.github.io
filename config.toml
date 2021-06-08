@@ -9,7 +9,7 @@ summaryLength = 20
 theme = "tale"
 [params]
   author = "Klauz" # Add the name of the author (this theme only supports one author)
-  description = "Cláudia Carvalho's blog about making things"
+  description = "Cláudia Carvalho is a UX Designer interested in Product and Productivity, writing a blog about making things"
 [author]
   name = "Cláudia Carvalho" # Used by the foot copyright
 [menu]
