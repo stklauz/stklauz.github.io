@@ -8,7 +8,8 @@ summaryLength = 20
 # Theme Settings
 theme = "tale"
 [params]
-  Author = "Klauz" # Add the name of the author (this theme only supports one author)
+  author = "Klauz" # Add the name of the author (this theme only supports one author)
+  description = "Cláudia Carvalho's blog about making things"
 [author]
   name = "Cláudia Carvalho" # Used by the foot copyright
 [menu]

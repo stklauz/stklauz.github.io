@@ -18,6 +18,9 @@
 		{{- end }}
 
 		<title>{{- if .IsHome }}{{ .Site.Title }}{{- else }}{{ .Title }} &middot; {{ .Site.Title }}{{- end }}</title>
+		<meta name="robots" content="index, archive"/>
+		<link rel="canonical" href="http://stklauz.github.io" />
+		
 
 		<!-- CSS -->
 		{{- $inServerMode	:= .Site.IsServer }}
