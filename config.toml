@@ -13,3 +13,11 @@ theme = "tale"
 [author]
   name = "Cláudia Carvalho" # Used by the foot copyright
 [menu]
+  [[menu.main]]
+    identifier = "product"
+    name = "Product"
+    url = "/categories/product/"
+  [[menu.main]]
+    identifier = "life"
+    name = "Productivity"
+    url = "/categories/productivity/"

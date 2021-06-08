@@ -7,8 +7,8 @@ draft: false
 # Lists
 keywords: 
 tags:
-  - "Product"
 categories:
+  - "Product"
 ---
 *To better understand the decisions your company and leadership are taking, it could be useful to start understanding your company's context. What is your company's Industry, and where is it headed? What are the typical patterns of companies in each of these stages? How should your company prepare for its environment? These questions belong to a series of posts that hopes to create some context around businesses and business decisions.*
 
