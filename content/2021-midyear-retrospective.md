@@ -8,7 +8,7 @@ draft: true
 keywords: 
 tags:
 categories:
-  - "Productivity"
+  - "Life"
 ---
 
 June is here everybody! Bringing with it the middle of the year. Which makes me wonder: looking back so far, how is this year going? Am I working towards the goals I initially set for myself, or am I just aimlessly cruising like I’ve done every single year before this one?
