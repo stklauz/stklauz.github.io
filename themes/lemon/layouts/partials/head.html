@@ -1,0 +1,24 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{ $title := print .Site.Title " | " .Title }}
+    {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+    <title>{{ $title }}</title>
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{end }}{{ end }} ">
+
+    <meta name="keywords" content="{{ .Site.Params.keywords }}">
+    <meta name="author" content="{{ .Site.Params.author }}">
+
+    <link rel="icon" type="image/png" href="favicon192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="favicon512.png" sizes="512x512">
+
+    <link rel="canonical" href="{{ .Permalink }}" />
+
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
+    <link rel="stylesheet" href="{{ absURL "css/skeleton/normalize.css" }}">
+    <link rel="stylesheet" href="{{ absURL "css/skeleton/skeleton.css" }}">
+    <link rel="stylesheet" href="{{ absURL "css/style.css" }}">
+
+
+</head>

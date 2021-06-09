@@ -2,15 +2,14 @@
 title: "About"
 date: 2021-04-24T08:47:11+01:00
 draft: false
-menu: "main"
 summary: "About myself and about this blog"
+page: true
 
 # Lists
 keywords:
 tags:
 categories:
 ---
-
 ## About me
 
 Hi you :) My name is Cláudia, but most people call me Klauz. I'm a Product Designer based in Portugal, learning how to make things that add value to people's lives.
@@ -24,6 +23,8 @@ I've been working here:
 
 You can follow me here:
 * [Linkedin](https://www.linkedin.com/in/claudiacvlho/)
+
+![Being in Coimbra](/images/klauz_coimbra.jpg)
 
 ## About this blog
 
@@ -48,4 +49,3 @@ So here I am. **Making Things.** This blog aims to capture some of the insights 
 
 Cheers!
 
-![Being in Coimbra](/images/klauz_coimbra.jpg)

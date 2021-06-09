@@ -1,0 +1,10 @@
+<header id="nav-border" class="header">
+    <a href="/" title="home" class="logo__link">
+        <h1 class="logo__heading">{{ .Site.Title }}</h1>
+    </a>
+    <nav id="nav" class="nav navbar-list">
+        {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}" class="navbar-item">{{ .Name }}</a>
+        {{ end }}
+    </nav>
+</header>

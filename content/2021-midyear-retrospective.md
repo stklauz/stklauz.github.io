@@ -2,6 +2,7 @@
 title: "3 changes I've done this year (so far)"
 date: 2021-06-08T08:47:11+01:00
 draft: false
+page: false
 # summary:
 
 # Lists

@@ -2,6 +2,7 @@
 title: "Understanding business lifecycles"
 date: 2021-05-14T08:47:11+01:00
 draft: false
+page: false
 # summary:
 
 # Lists
