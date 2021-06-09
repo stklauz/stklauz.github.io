@@ -10,23 +10,21 @@ keywords:
 tags:
 categories:
 ---
-## About me
+### About me
 
 Hi you :) My name is Cláudia, but most people call me Klauz. I'm a Product Designer based in Portugal, learning how to make things that add value to people's lives.
 
 I've been working here:
 
-* **Codacy** 2021 — Senior Product Designer
-* **DefinedCrowd** 2020 — UX Design & Research Manager
-* **DefinedCrowd** 2019 — UX Design Lead
-* **DefinedCrowd** 2016 — UX Designer & UI Developer
+* **Codacy** 
+  * 2021 — Senior Product Designer
+* **DefinedCrowd** 
+  * 2020 — UX Design & Research Manager
+  * 2019 — UX Design Lead
+  * 2016 — UX Designer & UI Developer
 
-You can follow me here:
-* [Linkedin](https://www.linkedin.com/in/claudiacvlho/)
 
-![Being in Coimbra](/images/klauz_coimbra.jpg)
-
-## About this blog
+### About this blog
 
 Before we dwell on this blog's content, I'd like to explain you the reasoning behind it.
 
@@ -48,4 +46,7 @@ This blog is born to support the first goal. Feeling useful. And even though I 
 So here I am. **Making Things.** This blog aims to capture some of the insights I'll be gathering from my pursuit of following my goals. You should expect some very weird content and hopefully some know-how around Design, Product, and others. Hope you stick around! :)
 
 Cheers!
+
+![Being in Coimbra](/images/klauz_coimbra.jpg)
+
 

@@ -1,32 +1,37 @@
 {{ define "main" }}
-<section class="section">
+<section class="post">
   <article>
-    <h1 class="title is-1">{{ .Title }}</h1>
-    <div class="">
-        <p><time>{{ .PublishDate.Format "January 2, 2006" }}</time> | 
-            {{ .ReadingTime }} {{ if eq .ReadingTime 1 }} minute {{ else }} minutes {{ end }}</p>
-        </div>
-        <div class="">
-            {{ range $idx, $category := .Params.categories }}
-            in {{- if ne $idx 0 }}, {{ end }}<a href="{{ "categories/" | relURL }}{{ $category | urlize }}">{{ $category }}</a>
-            {{- end }}
-          </div>
+    <div class="post__title">
+      <h1 class="title is-1">{{ .Title }}</h1>
+      <p><time>{{ .PublishDate.Format "January 2, 2006" }}</time> | 
+              {{ .ReadingTime }} {{ if eq .ReadingTime 1 }} minute {{ else }} minutes {{ end }} | {{ range $idx, $category := .Params.categories }}
+              {{"in "}}{{- if ne $idx 0 }}, {{ end }}<a href="{{ "categories/" | relURL }}{{ $category | urlize }}">{{ $category }}</a>
+              {{- end }}</p>
+    </div>
+
     <div class="">
       {{ .Content }}
     </div>
     
   </article>
-  <div class="">
-    {{ with .PrevInSection }}
-    <p>Previous post</p>
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
-    {{ end }}
-  </div>
-  <div class="">
-    {{ with .NextInSection }}
-    <p>Next post</p>
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
-  {{ end }}
-  </div>
+    <div class="row pagination">
+      <div class="six columns u-pull-left">
+        {{ with .PrevInSection }}
+        
+        <p class="pagintation__title">
+          <a href="{{ .Permalink }}">← Previous post</a>
+        </p>
+        {{ end }}
+      </div>
+      <div class="six columns u-pull-right pagination__next">
+        {{ with .NextInSection }}
+          <p class="pagintation__title">
+            <a href="{{ .Permalink }}">
+              Next post →
+            </a>
+          </p>
+      {{ end }}
+      </div>
+    </div>
 </section>
 {{ end }}

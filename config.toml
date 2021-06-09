@@ -6,7 +6,7 @@ summaryLength = 20
 
 
 # Theme Settings
-theme = "tale"
+theme = "lemon"
 [params]
   author = "Klauz" # Add the name of the author (this theme only supports one author)
   description = "Cláudia Carvalho is a UX Designer interested in Product and Productivity, writing a blog about making things"
@@ -23,4 +23,5 @@ theme = "tale"
     name = "Product"
     url = "/categories/product/"
     weight= -1
+ 
 
