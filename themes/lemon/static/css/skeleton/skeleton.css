@@ -36,7 +36,7 @@
   --color-gray1: #F5F5F5;
   --color-white: #fff;
 
-  --color-main-light: #DFC2F2;
+  --color-main-light: #43bccd;
   --color-main: #266DD3;
   --color-main-dark: #344055;
 
@@ -522,9 +522,29 @@ there.
   text-decoration: none;
 }
 
+@keyframes wee {
+  0%   {background-color: #f9c80e; bottom: 0rem;}
+  25%  {background-color: #f86624; bottom: 3rem;}
+  50%  {background-color: #ea3546; bottom: -1.5rem;}
+  85% {background-color: #662e9b; bottom: 2rem;}
+  100% {background-color: #43bccd; bottom:0rem;}
+}
+
 .logo__heading {
   display: inline-block;
   font-weight: var(--bold);
+}
+.logo__niceness {
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  background-color: var(--color-main-light);
+  border-radius: 100%;
+  margin-left: 1rem;
+  position: relative;
+}
+.logo__link:hover .logo__niceness {
+  animation: wee 1s alternate forwards;
 }
 
 img {
