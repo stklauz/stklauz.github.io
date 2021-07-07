@@ -8,20 +8,22 @@ summaryLength = 20
 # Theme Settings
 theme = "lemon"
 [params]
-  author = "Klauz" # Add the name of the author (this theme only supports one author)
-  description = "Cláudia Carvalho is a UX Designer interested in Product and Productivity, writing a blog about making things"
+  author = "Cláudia Carvalho" # Add the name of the author (this theme only supports one author)
+  description = "Cláudia Carvalho is a UX Designer writing a blog about making things"
+  keywords = "UX Designer, design, product management, blog, Cláudia Carvalho, stklauz"
 [author]
   name = "Cláudia Carvalho" # Used by the foot copyright
 [menu]
   [[menu.main]]
-    identifier = "life"
-    name = "Life"
-    url = "/categories/Life/"
+    identifier = "others"
+    name = "Others"
+    url = "/categories/others/"
     weight= 1
   [[menu.main]]
     identifier = "product"
     name = "Product"
     url = "/categories/product/"
     weight= -1
+ 
  
 

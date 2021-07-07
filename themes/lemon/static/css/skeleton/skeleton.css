@@ -156,6 +156,13 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
   font-style: normal;
  }
 
+ @font-face {
+  font-family: 'Work Sans';
+  src: url('/fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+  font-style: normal;
+  font-weight: bold;
+ }
+
 
 
 html {
@@ -169,7 +176,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 550px) {
+@media (min-width: 750px) {
   html {
     font-size: 62.5%; }
 }
@@ -487,7 +494,7 @@ there.
 
 
 /* ---------- */
-@media (min-width: 750px) {
+@media (min-width: 1000px) {
   .nav {
     float: right;
     margin-top: 2rem;
@@ -497,7 +504,7 @@ there.
 .navbar-item {
   margin-right: 2rem;
 }
-@media (min-width: 750px) {
+@media (min-width: 1000px) {
   .navbar-item {
     margin-right: 0;
     margin-left: 2rem;
@@ -511,7 +518,7 @@ there.
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--color-gray2);
 }
-@media (min-width: 750px) {
+@media (min-width: 1000px) {
   .header {
     margin: 4rem 0 4rem;
     padding-bottom: 2rem;
@@ -544,7 +551,7 @@ there.
   position: relative;
 }
 .logo__link:hover .logo__niceness {
-  animation: wee 1s alternate forwards;
+  animation: 1s ease-in-out alternate forwards wee;
 }
 
 img {
@@ -567,7 +574,7 @@ img {
 .post__title {
   margin: 0rem 0 4rem;
 }
-@media (min-width: 750px) {
+@media (min-width: 1000px) {
   .post__title {
     margin: 2rem 0 6rem;
   }
