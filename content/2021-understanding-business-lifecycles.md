@@ -35,20 +35,16 @@ When looking at an Industry's lifecycle, what you actually see is how several co
 
 An Industry lifecycle is made out of four different stages: **Introduction**, **Growth**, **Maturity** and **Decline**. As Industries move through different stages, you'll also notice that:
 
-- **each stage can vary substantially between different industries**
-  
+- **each stage can vary substantially between different industries**  
   (one industry may spend decades in maturity, as others may just spend a couple of years)
 
-- **each stage can develop at very different rates**
-  
+- **each stage can develop at very different rates**  
   (industries can take a few years introducing itself, and spend a few decades growing)
 
-- **each industry can also develop at different rates per country/continent/region**
-  
+- **each industry can also develop at different rates per country/continent/region**  
   (think about the energy industry, and how it developed so differently between the Asian and African continents)
 
-- **there are industries that may never face decline.**
-  
+- **there are industries that may never face decline.**  
   (industries essentially related to human survival, namely the clothing and food industry)
 
 
