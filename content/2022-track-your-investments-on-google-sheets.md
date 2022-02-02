@@ -11,19 +11,6 @@ tags:
 categories:
   - "Others"
 ---
----
-title: "Tracking investments using Google Sheets"
-date: 2022-02-02T08:47:11+01:00
-draft: false
-page: false
-# summary:
-
-# Lists
-keywords: 
-tags:
-categories:
-  - "Others"
----
 
 Last year I started my investment journey. As expected, after a few months I realized I had made a lot of mistakes when it came to my portfolio's management:
 
