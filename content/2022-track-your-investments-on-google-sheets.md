@@ -1,7 +1,7 @@
 ---
-title: "Tracking investments with Google Sheets"
-date: 2022-01-15T08:47:11+01:00
-draft: true
+title: "Tracking investments using Google Sheets"
+date: 2022-02-02T08:47:11+01:00
+draft: false
 page: false
 # summary:
 
@@ -16,104 +16,80 @@ Last year I started my investment journey. As expected, after a few months I rea
 
 > Using **different apps** to buy **different assets** in **different currencies**, consequently, losing track of my portfolio's overall value, evolution and distribution.
 
-Although I did try a number of apps (with a special shoutout to [Yahoo Finance](https://finance.yahoo.com/) that holds a special place in my heart), I do have a soft spot for Excel and Google Sheets.
+Although I did try a number of apps (with a special shoutout to [Yahoo Finance](https://finance.yahoo.com/) which still holds a special place in my heart), I do have a soft spot for Excel and Google Sheets.
 
-I need an alternative that allowed me to track my portfolio supporting all my different positions and currencies.
+I needed an alternative which allowed me to track my portfolio and support all my different positions and currencies I used.
 
-➡️ Hence this [Finances Tracker Template](https://docs.google.com/spreadsheets/d/1DSwYg3BQtt0WewUGQSJd3IUX7oeGfYgwyRnDdZdciXk/edit?usp=sharing), that you can see and duplicate!
+##### ➡️ [Finances Tracker Template (make a copy for yourself)](https://docs.google.com/spreadsheets/d/1cIyl64JaccHCNjFuyb4fpCPvHn_td6iAvj8fQpo2lIg/copy?usp=sharing)
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS3RbwJ7-Oi0oIlxqX5VNai64_SHBLUXx4ISCGN4cEtRW25I4KNHOqSAaoKppaNEIY6GXt1GUjl3Z5b/pubhtml?widget=true&amp;headers=false"></iframe>
 
-#### What is this?
+![Snapshot of the Invesment tracking sheet](/images/2022/investmenttracker.png)
 
-This file is a template that you can use to monitor your investments, powered by a main dashboard (where you can see your general stats & distributions), your positions and your holdings/transactions. 
+#### What is this? 📈
 
-I have also added a sheet where you can add a timeline for tracking your portfolio's progress over time, although I won't cover that today.
+This file is a template that you can use to monitor your investments, powered by a main dashboard (where you can see your general stats & distributions), positions and holdings/transactions.
 
-#### How does it work?
+I have also added a sheet where you can add a timeline for tracking your portfolio's progress over time.
 
-Well, it's quite simple. In order to monitor your moneys you have to:
 
-* Add each transaction that you do to the sheet, buy or sale. Within that transaction is important to specify the Tracker name (e.g. Apple = AAPL), amount and price/share.
-* Add a new position.
+#### Who is this for? 🤷‍♂️
 
-#### Who is this for?
+Honestly, if your not a day-trader or pro, just looking for a quick place to monitor your investments from, this should fit your needs perfectly! No muss, no fuss, ready to withhold 1000+ transactions for a few years.
 
-Honestly, if your not a day-trader or pro, just looking for a quick place to monitor your investments from, this should fit your needs perfectly! No muss, no fuss, ready to withhold 1000+ transactions.
+#### How does it work? ⚙️
 
-#### What do I win with this?
+Well, it's quite simple. In order to monitor your investments you have to:
 
-* You'll be able to add any currency!   
-  Let's say you bought a stock or coin with another currency other than the one you're tracking your portfolio from? That can be easily specified. Instead of adding the number normally you can use the power of Google Finance to your advantage. Example below, $PRICE = 10, $DATE = JAN 10, 2022:
+* Add each transaction to the sheet (buy or sale). Within that transaction is important to specify the Tracker name (e.g. Apple = AAPL), amount and price/share.
+* Add a new position, along with it's current value and closing value.
+
+#### What do I win with this? 🏆
+
+* **You'll be able to add any currency!**   
+  Let's say you bought a stock or coin with another currency other than the one you're tracking your portfolio from? That can be easily specified by using the power of Google Finance to your advantage. Example below, imagine you wanted to convert the value of your dollar stocks to euros:
 
   ```
-  =$PRICE * INDEX(GOOGLEFINANCE("CURRENCY:USDEUR";"price";$DATE;1);2;2)
+  =$VALUE * GOOGLEFINANCE("CURRENCY:USDEUR")
   ```
 
 
-* You'll have an overview of your entire portfolio within a single currency!
-* If something isn't available on Google Finance
+* **You'll have an overview of your entire portfolio within a single currency!**   
+  After converting all your investments, you'll be able to see the overall of your portfolio, which can also be quite helpful for your IRS (if you don't live in the USA)
 
-#### What do I lose, compared with other apps?
+#### What do I lose, compared with other apps? 😢
 
-* It's not 100% accurate    
+* **It's not 100% accurate**   
   but from my experience, 100% accurancy isn't a thing among stock trackers
-* I takes a bit more management 
+
+* **I takes a bit more management**   
   Yes, you need to save a few formulas! and yes, you need to do a lot of manual configuration. But I promise it's just at the beginning! If you stay consistent with your portfolio, this also shouldn't be a problem, cause you'll just be repaeting what you already setup.
 
-#### I really like this, but I would love see the evolution of my portfolio as well
-
-That's completely possible, although the method I'll suggest is more of a work around. The reason why this suggestion will be a bit clunky is to spare the spreadsheet of endless API calls to Google Finance. 
-
-**This method will give you an idea of how your porfolio progresses, but should not be used to take conclusions or used when monitoring very volutile positions.**
-
-I'll leave a quick explanation on how it works on the Timeline sheet. 
-I'd love to know if you can improve upon it! :) 
-
-What I suggest is taking a snapshot for your portfolio everyday, and storing it on your sheet. What does this mean? I'll tell you quickly.
-
-By creating a Macro (**Sheets > Extensions > Macros > Record Macro**), you're able to create a script that records & repeat those actions sequentially on call as many times as you want (ex. copy, pasting, selecting, etc). Once that's set, you'll be able to schedule it so it runs everyday at a certain time of day. 
-
-💡 You can even set it to run multiple times a day, and calculate an average to make it more accurate! It's up to you how you how this is done!
-
-If you're using the template as is, you can just copy-paste the script below into **Sheets > Extensions > App Scripts**.
+* **Google Finance might not support every tracker!**   
+  Yes, it's true, google finance's function is fallable. That's why there are a few folks making money out of Google Sheets pluggins to track crypto. 👀 But honestly, you don't need that :) If the problem is cripto, you can try either of the examples below to your advantage!
 
   ```
-function TIMELINEFORSURE() {
-    var spreadsheet = SpreadsheetApp.getActive();
-    // wait to load
-    Utilities.sleep(5000);
-
-    // create row
-    spreadsheet.setActiveSheet(spreadsheet.getSheetByName('📊 Investing Timeline'), true);
-    spreadsheet.getRange('2:2').activate();
-    spreadsheet.getActiveSheet().insertRowsBefore(spreadsheet.getActiveRange().getRow(), 1);
-
-    // set date
-    spreadsheet.getActiveRange().offset(0, 0, 1, spreadsheet.getActiveRange().getNumColumns()).activate();
-    spreadsheet.getRange('A2').activate();
-    spreadsheet.getRange('J1').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_VALUES, false);
-
-    // get overall values
-    spreadsheet.getRange('B2').activate();
-    spreadsheet.getRange('\'🌝 Life\'!H17:K17').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_VALUES, false);
-
-    // get category values
-    spreadsheet.getRange('J3').activate();
-    spreadsheet.getRange('\'🌝 Life\'!I20:I22').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_VALUES, false);
-    spreadsheet.getRange('F2').activate();
-    spreadsheet.getRange('J3:J5').copyTo(spreadsheet.getActiveRange(), SpreadsheetApp.CopyPasteType.PASTE_VALUES, true);
-    spreadsheet.getRange('J3:J5').activate();
-    spreadsheet.getActiveRangeList().clear({contentsOnly: true, skipFilteredRows: true});
-
-    // sort
-    spreadsheet.getRange('A1').activate();
-    spreadsheet.getActiveSheet().getFilter().sort(1, true);
-};
+  =$PRICE * GOOGLEFINANCE("CURRENCY:USDEUR")
   ```
+
+#### How do I make the timeline work? 🗓
+
+That's completely possible by saving your closing values to the timeline sheet. But do you have to do it by hand? Absolutely not! 😁
+
+How does it work? Simply go to the "⚙️. Timeline Macro" sheet at the bottom, and copy that script. Then go to **Extensions** > **App Scripts**, and paste it. (You may already have this done by copying the sheet!) That's half of it.
+
+The other half is triggering it automatically. Within the **App Scripts**, on the left sidebar, go to **Triggers** > **Add Trigger** > **Select Event Source** > **Time-Driven**. This will allow you to run the script on a time basis. Now, how often you want it, that's for you to decide. I like to set a **Day timer** working during the night so i can my results by the morning. And that's it. 
+
+Give it a test run to see if everything is working! If it isn't, take a look at the script, I tried to make it as simple as possible, so you could modify it easily.
+
+Most common problems typically are:
+
+* Different sheet names
+* Changing where the dashboard cells are
+* etc.
+
+Once that's running, your timeline charts will immediatly start to fill! :)
 
 #### I have some feedback!
 
-Please send it directly to me! You can reach me via Linkedin or Twitter.
-
-Thank you folks! Happy new year! 
+Please send it directly to me! You can reach me via [Twitter](https://twitter.com/claudiacvlho).
+Thank you folks! Happy new year! 🎉
