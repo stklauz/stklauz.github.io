@@ -68,7 +68,15 @@ Well, it's quite simple. To monitor your investments you have to:
   Yes, it's true, google finance's function is fallible. That's why there are a few folks making money out of Google Sheets plugins to track crypto. 👀 But honestly, you don't need that :) If the problem is crypto, you can try either of the examples below to your advantage!
 
   ```
-  =$PRICE * GOOGLEFINANCE("CURRENCY:USDEUR")
+  // importing from Cryptoprices.cc api
+  =VALUE(SUBSTITUTE(IMPORTDATA("https://cryptoprices.cc/BTC/"); "."; ","))
+
+  // importing from GoogleFinance's html
+  =VALUE(SUBSTITUTE(SUBSTITUTE(IMPORTXML("https://www.google.com/finance/quote/BTC-EUR";"//div[@data-source='BTC']/div/div/div[1]/div/span/div/div");"."; ",");"$";"") )
+
+  // importing from coinmarketcap.com
+  =VALUE(SUBSTITUTE(SUBSTITUTE(IMPORTXML("https://coinmarketcap.com/currencies/dogecoin/";"//div[@class='priceValue ']/span");"."; ",");"$";""))
+
   ```
 
 #### How do I make the timeline work? 🗓

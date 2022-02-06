@@ -118,7 +118,15 @@ Yes, you need to save a few formulas! and yes, you need to do a lot of manual co
 <li>
 <p><strong>Google Finance might not support every tracker!</strong><br>
 Yes, it&rsquo;s true, google finance&rsquo;s function is fallible. That&rsquo;s why there are a few folks making money out of Google Sheets plugins to track crypto. 👀 But honestly, you don&rsquo;t need that :) If the problem is crypto, you can try either of the examples below to your advantage!</p>
-<pre><code>=$PRICE * GOOGLEFINANCE(&quot;CURRENCY:USDEUR&quot;)
+<pre><code>// importing from Cryptoprices.cc api
+=VALUE(SUBSTITUTE(IMPORTDATA(&quot;https://cryptoprices.cc/BTC/&quot;); &quot;.&quot;; &quot;,&quot;))
+
+// importing from GoogleFinance's html
+=VALUE(SUBSTITUTE(SUBSTITUTE(IMPORTXML(&quot;https://www.google.com/finance/quote/BTC-EUR&quot;;&quot;//div[@data-source='BTC']/div/div/div[1]/div/span/div/div&quot;);&quot;.&quot;; &quot;,&quot;);&quot;$&quot;;&quot;&quot;) )
+
+// importing from coinmarketcap.com
+=VALUE(SUBSTITUTE(SUBSTITUTE(IMPORTXML(&quot;https://coinmarketcap.com/currencies/dogecoin/&quot;;&quot;//div[@class='priceValue ']/span&quot;);&quot;.&quot;; &quot;,&quot;);&quot;$&quot;;&quot;&quot;))
+
 </code></pre></li>
 </ul>
 <h4 id="how-do-i-make-the-timeline-work-">How do I make the timeline work? 🗓</h4>

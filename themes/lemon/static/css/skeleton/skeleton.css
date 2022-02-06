@@ -391,7 +391,15 @@ code {
 pre > code {
   display: block;
   padding: 1rem 1.5rem;
-  white-space: pre; }
+  white-space: pre; 
+  border: none;
+}
+pre {
+  background: var(--color-gray1);
+  border-radius: 4px;
+  border: 1px solid var(--color-gray2);
+}
+
 
 
 /* Tables
