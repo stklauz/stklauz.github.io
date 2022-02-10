@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "making things"
 sectionPagesMenu = "main"
 summaryLength = 20
+enableRobotsTXT = true
 
 
 # Theme Settings
