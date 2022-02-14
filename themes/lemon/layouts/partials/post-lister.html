@@ -1,10 +1,10 @@
 {{ range where .Pages "Params.page" false }}
-   <div class="list__item">
+   <article class="list__item">
     <h4 class="list__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
     <p class="list__caption"><time>{{ .PublishDate.Format "January 2, 2006" }}</time> | 
         {{ .ReadingTime }} {{ if eq .ReadingTime 1 }} minute {{ else }} minutes {{ end }} | {{ range $idx, $category := .Params.categories }}
         {{"in "}}{{- if ne $idx 0 }}, {{ end }}<a href="{{ "categories/" | relURL }}{{ $category | urlize }}">{{ $category }}</a>
         {{- end }}</p>
         <p class="list__description">{{ if isset .Params "summary" }}{{ .Params.Summary | markdownify }}{{ else }}{{ .Summary }}{{ end }}</p>
-    </div>
+    </article>
 {{ end }}
