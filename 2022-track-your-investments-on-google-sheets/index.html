@@ -1,136 +1,17 @@
-<!doctype html><html lang=en-us><head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<base href=/>
-<title>making things | Tracking investments using Google Sheets</title>
-<meta name=description content="Last year I started my investment journey. As expected, after a few months I realized I had made a lot of mistakes when it came to my portfolio&rsquo;s management:">
-<meta name=keywords content="UX Designer,design,product management,blog,Cláudia Carvalho,stklauz">
-<meta name=author content="Cláudia Carvalho">
-<link rel=apple-touch-icon sizes=180x180 href=favicon_package_v0.16/apple-touch-icon.png>
-<link rel=icon type=image/png sizes=32x32 href=favicon_package_v0.16/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=favicon_package_v0.16/favicon-16x16.png>
-<link rel=manifest href=favicon_package_v0.16/site.webmanifest>
-<link rel=mask-icon href=favicon_package_v0.16/safari-pinned-tab.svg color=#5bbad5>
-<meta name=msapplication-TileColor content="#da532c">
-<meta name=theme-color content="#ffffff">
-<link rel=canonical href=https://stklauz.github.io/2022-track-your-investments-on-google-sheets/>
-<meta property="og:title" content="Tracking investments using Google Sheets">
-<meta property="og:description" content="Last year I started my investment journey. As expected, after a few months I realized I had made a lot of mistakes when it came to my portfolio&rsquo;s management:">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://stklauz.github.io/2022-track-your-investments-on-google-sheets/"><meta property="article:section" content>
-<meta property="article:published_time" content="2022-02-02T08:47:11+01:00">
-<meta property="article:modified_time" content="2022-02-02T08:47:11+01:00">
-<meta name=twitter:card content="summary">
-<meta name=twitter:title content="Tracking investments using Google Sheets">
-<meta name=twitter:description content="Last year I started my investment journey. As expected, after a few months I realized I had made a lot of mistakes when it came to my portfolio&rsquo;s management:">
-<link rel=stylesheet href=https://stklauz.github.io/css/skeleton/normalize.css>
-<link rel=stylesheet href=https://stklauz.github.io/css/skeleton/skeleton.css>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FEEQYT8W4L"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-FEEQYT8W4L')</script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8836499390704731" crossorigin=anonymous></script>
-</head><body class=container><header id=nav-border class=header>
-<a href=/ title=home class=logo__link>
-<h1 class=logo__heading>making things</h1>
-<span class=logo__niceness></span>
-</a>
-<nav id=nav class="nav navbar-list">
-<a href=/categories/product/ class=navbar-item>Product</a>
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><base href=/><title>making things | Tracking investments using Google Sheets</title>
+<meta name=description content="Last year I started my investment journey. As expected, after a few months I realized I had made a lot of mistakes when it came to my portfolio&rsquo;s management:"><meta name=keywords content="UX Designer,design,product management,blog,Cláudia Carvalho,stklauz"><meta name=author content="Cláudia Carvalho"><link rel=apple-touch-icon sizes=180x180 href=favicon_package_v0.16/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=favicon_package_v0.16/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=favicon_package_v0.16/favicon-16x16.png><link rel=manifest href=favicon_package_v0.16/site.webmanifest><link rel=mask-icon href=favicon_package_v0.16/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content="#da532c"><meta name=theme-color content="#ffffff"><link rel=canonical href=https://stklauz.github.io/2022-track-your-investments-on-google-sheets/><meta property="og:url" content="https://stklauz.github.io/2022-track-your-investments-on-google-sheets/"><meta property="og:site_name" content="making things"><meta property="og:title" content="Tracking investments using Google Sheets"><meta property="og:description" content="Last year I started my investment journey. As expected, after a few months I realized I had made a lot of mistakes when it came to my portfolio’s management:"><meta property="og:locale" content="en_us"><meta property="og:type" content="article"><meta property="article:published_time" content="2022-02-02T08:47:11+01:00"><meta property="article:modified_time" content="2022-02-02T08:47:11+01:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Tracking investments using Google Sheets"><meta name=twitter:description content="Last year I started my investment journey. As expected, after a few months I realized I had made a lot of mistakes when it came to my portfolio’s management:"><link rel=stylesheet href=https://stklauz.github.io/css/skeleton/normalize.css><link rel=stylesheet href=https://stklauz.github.io/css/skeleton/skeleton.css><script async src="https://www.googletagmanager.com/gtag/js?id=G-FEEQYT8W4L"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-FEEQYT8W4L")</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8836499390704731" crossorigin=anonymous></script><script src=https://cdn.userway.org/widget.js data-account=fEalnJZDrU></script></head><body class=container><header id=nav-border class=header><a href=/ title=home class=logo__link><h1 class=logo__heading>making things</h1><span class=logo__niceness></span></a><nav id=nav class="nav navbar-list"><a href=/categories/product/ class=navbar-item>Product</a>
 <a href=/categories/design/ class=navbar-item>Design</a>
 <a href=/categories/others/ class=navbar-item>Others</a>
-<a href=/about/ class=navbar-item>About</a>
-</nav>
-</header><main class=content>
-<section class=post>
-<article>
-<div class=post__title>
-<h1 class="title is-1">Tracking investments using Google Sheets</h1>
-<p><time>February 2, 2022</time> |
+<a href=/about/ class=navbar-item>About</a></nav></header><main class=content><section class=post><article><div class=post__title><h1 class="title is-1">Tracking investments using Google Sheets</h1><p><time>February 2, 2022</time> |
 4 minutes |
-in <a href=/categories/others>Others</a></p>
-</div>
-<div>
-<p>Last year I started my investment journey. As expected, after a few months I realized I had made a lot of mistakes when it came to my portfolio&rsquo;s management:</p>
-<blockquote>
-<p>Using <strong>different apps</strong> to buy <strong>different assets</strong> in <strong>different currencies</strong>, consequently, losing track of my portfolio&rsquo;s overall value, evolution and distribution.</p>
-</blockquote>
-<p>Although I did try several apps (with a special shoutout to <a href=https://finance.yahoo.com/>Yahoo Finance</a> which still holds a special place in my heart), I do have a soft spot for Excel and Google Sheets.</p>
-<p>I needed an alternative that allowed me to track my portfolio and support all the different positions and currencies I used.</p>
-<h5 id=-finances-tracker-template-make-a-copy-for-yourselfhttpsdocsgooglecomspreadsheetsd1ciyl64jacchcnjfuyb4fpcpvhn_td6iavj8fqpo2ligcopyuspsharing>➡️ <a href="https://docs.google.com/spreadsheets/d/1cIyl64JaccHCNjFuyb4fpCPvHn_td6iAvj8fQpo2lIg/copy?usp=sharing">Finances Tracker Template (make a copy for yourself)</a></h5>
-<p><img src=/images/2022/investmenttracker.png alt="Snapshot of the Investment tracking sheet"></p>
-<h4 id=what-is-this->What is this? 📈</h4>
-<p>This file is a template that you can use to monitor your investments, powered by the main dashboard (where you can see your general stats & distributions), positions, and holdings/transactions sheets.</p>
-<p>I have also added a sheet where you can add a timeline for tracking your portfolio&rsquo;s progress over time.</p>
-<h4 id=who-is-this-for->Who is this for? 🤷‍♂️</h4>
-<p>Honestly, if you&rsquo;re not a day-trader or pro, just looking for a quick place to monitor your investments, this should fit your needs perfectly! No muss, no fuss, ready to withhold 1000+ transactions for a few years.</p>
-<h4 id=how-does-it-work->How does it work? ⚙️</h4>
-<p>Well, it&rsquo;s quite simple. To monitor your investments you have to:</p>
-<ul>
-<li>Add each transaction to the sheet (buy or sale). Within that transaction is important to specify the Tracker name (e.g. Apple = AAPL), amount, and price/share.</li>
-<li>Add a new position, along with its current value and closing value.</li>
-</ul>
-<h4 id=what-do-i-win-with-this->What do I win with this? 🏆</h4>
-<ul>
-<li>
-<p><strong>You&rsquo;ll be able to add any currency!</strong><br>
-Let&rsquo;s say you bought a stock or coin with another currency other than the one you&rsquo;re tracking your portfolio from? That can be easily specified by using the power of Google Finance to your advantage. On the example below, imagine you wanted to convert the value of your dollar stocks to euros:</p>
-<pre tabindex=0><code>=$VALUE * GOOGLEFINANCE(&quot;CURRENCY:USDEUR&quot;)
-</code></pre></li>
-<li>
-<p><strong>You&rsquo;ll have an overview of your entire portfolio within a single currency!</strong><br>
-After converting all your investments, you&rsquo;ll be able to see the overall of your portfolio, which can also be quite helpful for your IRS (if you don&rsquo;t live in the USA)</p>
-</li>
-</ul>
-<h4 id=what-do-i-lose-compared-with-other-apps->What do I lose, compared with other apps? 😢</h4>
-<ul>
-<li>
-<p><strong>It&rsquo;s not 100% accurate</strong><br>
-but from my experience, 100% accuracy isn&rsquo;t a thing among stock trackers</p>
-</li>
-<li>
-<p><strong>I takes a bit more management</strong><br>
-Yes, you need to save a few formulas! and yes, you need to do a lot of manual configuration. But I promise it&rsquo;s just at the beginning! If you stay consistent with your portfolio, this also shouldn&rsquo;t be a problem, cause you&rsquo;ll just be repeating what you already set up.</p>
-</li>
-<li>
-<p><strong>Google Finance might not support every tracker!</strong><br>
-Yes, it&rsquo;s true, google finance&rsquo;s function is fallible. That&rsquo;s why there are a few folks making money out of Google Sheets plugins to track crypto. 👀 But honestly, you don&rsquo;t need that :) If the problem is crypto, you can try either of the examples below to your advantage!</p>
-<pre tabindex=0><code>// importing from Cryptoprices.cc api
-=VALUE(SUBSTITUTE(IMPORTDATA(&quot;https://cryptoprices.cc/BTC/&quot;); &quot;.&quot;; &quot;,&quot;))
+in <a href=/categories/others>Others</a></p></div><div><p>Last year I started my investment journey. As expected, after a few months I realized I had made a lot of mistakes when it came to my portfolio&rsquo;s management:</p><blockquote><p>Using <strong>different apps</strong> to buy <strong>different assets</strong> in <strong>different currencies</strong>, consequently, losing track of my portfolio&rsquo;s overall value, evolution and distribution.</p></blockquote><p>Although I did try several apps (with a special shoutout to <a href=https://finance.yahoo.com/>Yahoo Finance</a> which still holds a special place in my heart), I do have a soft spot for Excel and Google Sheets.</p><p>I needed an alternative that allowed me to track my portfolio and support all the different positions and currencies I used.</p><h5 id=-finances-tracker-template-make-a-copy-for-yourselfhttpsdocsgooglecomspreadsheetsd1ciyl64jacchcnjfuyb4fpcpvhn_td6iavj8fqpo2ligcopyuspsharing>➡️ <a href="https://docs.google.com/spreadsheets/d/1cIyl64JaccHCNjFuyb4fpCPvHn_td6iAvj8fQpo2lIg/copy?usp=sharing">Finances Tracker Template (make a copy for yourself)</a></h5><p><img src=/images/2022/investmenttracker.png alt="Snapshot of the Investment tracking sheet"></p><h4 id=what-is-this->What is this? 📈</h4><p>This file is a template that you can use to monitor your investments, powered by the main dashboard (where you can see your general stats & distributions), positions, and holdings/transactions sheets.</p><p>I have also added a sheet where you can add a timeline for tracking your portfolio&rsquo;s progress over time.</p><h4 id=who-is-this-for->Who is this for? 🤷‍♂️</h4><p>Honestly, if you&rsquo;re not a day-trader or pro, just looking for a quick place to monitor your investments, this should fit your needs perfectly! No muss, no fuss, ready to withhold 1000+ transactions for a few years.</p><h4 id=how-does-it-work->How does it work? ⚙️</h4><p>Well, it&rsquo;s quite simple. To monitor your investments you have to:</p><ul><li>Add each transaction to the sheet (buy or sale). Within that transaction is important to specify the Tracker name (e.g. Apple = AAPL), amount, and price/share.</li><li>Add a new position, along with its current value and closing value.</li></ul><h4 id=what-do-i-win-with-this->What do I win with this? 🏆</h4><ul><li><p><strong>You&rsquo;ll be able to add any currency!</strong><br>Let&rsquo;s say you bought a stock or coin with another currency other than the one you&rsquo;re tracking your portfolio from? That can be easily specified by using the power of Google Finance to your advantage. On the example below, imagine you wanted to convert the value of your dollar stocks to euros:</p><pre tabindex=0><code>=$VALUE * GOOGLEFINANCE(&#34;CURRENCY:USDEUR&#34;)
+</code></pre></li><li><p><strong>You&rsquo;ll have an overview of your entire portfolio within a single currency!</strong><br>After converting all your investments, you&rsquo;ll be able to see the overall of your portfolio, which can also be quite helpful for your IRS (if you don&rsquo;t live in the USA)</p></li></ul><h4 id=what-do-i-lose-compared-with-other-apps->What do I lose, compared with other apps? 😢</h4><ul><li><p><strong>It&rsquo;s not 100% accurate</strong><br>but from my experience, 100% accuracy isn&rsquo;t a thing among stock trackers</p></li><li><p><strong>I takes a bit more management</strong><br>Yes, you need to save a few formulas! and yes, you need to do a lot of manual configuration. But I promise it&rsquo;s just at the beginning! If you stay consistent with your portfolio, this also shouldn&rsquo;t be a problem, cause you&rsquo;ll just be repeating what you already set up.</p></li><li><p><strong>Google Finance might not support every tracker!</strong><br>Yes, it&rsquo;s true, google finance&rsquo;s function is fallible. That&rsquo;s why there are a few folks making money out of Google Sheets plugins to track crypto. 👀 But honestly, you don&rsquo;t need that :) If the problem is crypto, you can try either of the examples below to your advantage!</p><pre tabindex=0><code>// importing from Cryptoprices.cc api
+=VALUE(SUBSTITUTE(IMPORTDATA(&#34;https://cryptoprices.cc/BTC/&#34;); &#34;.&#34;; &#34;,&#34;))
 
-// importing from GoogleFinance's html
-=VALUE(SUBSTITUTE(SUBSTITUTE(IMPORTXML(&quot;https://www.google.com/finance/quote/BTC-EUR&quot;;&quot;//div[@data-source='BTC']/div/div/div[1]/div/span/div/div&quot;);&quot;.&quot;; &quot;,&quot;);&quot;$&quot;;&quot;&quot;) )
+// importing from GoogleFinance&#39;s html
+=VALUE(SUBSTITUTE(SUBSTITUTE(IMPORTXML(&#34;https://www.google.com/finance/quote/BTC-EUR&#34;;&#34;//div[@data-source=&#39;BTC&#39;]/div/div/div[1]/div/span/div/div&#34;);&#34;.&#34;; &#34;,&#34;);&#34;$&#34;;&#34;&#34;) )
 
 // importing from coinmarketcap.com
-=VALUE(SUBSTITUTE(SUBSTITUTE(IMPORTXML(&quot;https://coinmarketcap.com/currencies/dogecoin/&quot;;&quot;//div[@class='priceValue ']/span&quot;);&quot;.&quot;; &quot;,&quot;);&quot;$&quot;;&quot;&quot;))
-
-</code></pre></li>
-</ul>
-<h4 id=how-do-i-make-the-timeline-work->How do I make the timeline work? 🗓</h4>
-<p>That&rsquo;s completely possible by saving your closing values to the timeline sheet. But do you have to do it by hand? Nope! 😁</p>
-<p>How does it work? Simply go to the &ldquo;⚙️. Timeline Macro&rdquo; sheet at the bottom, and copy that script. Then go to <strong>Extensions</strong> > <strong>App Scripts</strong>, and paste it. (You may already have this done by copying the sheet!) That&rsquo;s half of it.</p>
-<p>The other half is triggering it automatically. Within the <strong>App Scripts</strong>, on the left sidebar, go to <strong>Triggers</strong> > <strong>Add Trigger</strong> > <strong>Select Event Source</strong> > <strong>Time-Driven</strong>. This will allow you to run the script on a timely basis. Now, how often you want it, that&rsquo;s for you to decide. I like to set a <strong>Day timer</strong> working during the night so i can my results by the morning. And that&rsquo;s it.</p>
-<p>Give it a test run to see if everything is working! If it isn&rsquo;t, take a look at the script, I tried to make it as simple as possible, so you could modify it easily.</p>
-<p>The most common problems typically are:</p>
-<ul>
-<li>Different sheet names</li>
-<li>Changing where the dashboard cells are</li>
-<li>etc.</li>
-</ul>
-<p>Once that&rsquo;s running, your timeline charts will immediately start to fill! :)</p>
-<h4 id=do-you-have-feedback->Do you have feedback? 💬</h4>
-<p>Please send it directly to me! You can reach me via <a href=https://twitter.com/claudiacvlho>Twitter</a>.
-Thank you, folks! Happy new year! 🎉</p>
-</div>
-</article>
-<div class="row pagination">
-<div class="six columns u-pull-left">
-<p class=pagintation__title>
-<a href=https://stklauz.github.io/2021-figma-organization/>← Previous post</a>
-</p>
-</div>
-<div class="six columns u-pull-right pagination__next">
-</div>
-</div>
-</section>
-</main><p class="footer text-center">Copyright © 2022 Cláudia Carvalho</p>
-</body>
-</html>
+=VALUE(SUBSTITUTE(SUBSTITUTE(IMPORTXML(&#34;https://coinmarketcap.com/currencies/dogecoin/&#34;;&#34;//div[@class=&#39;priceValue &#39;]/span&#34;);&#34;.&#34;; &#34;,&#34;);&#34;$&#34;;&#34;&#34;))
+</code></pre></li></ul><h4 id=how-do-i-make-the-timeline-work->How do I make the timeline work? 🗓</h4><p>That&rsquo;s completely possible by saving your closing values to the timeline sheet. But do you have to do it by hand? Nope! 😁</p><p>How does it work? Simply go to the &ldquo;⚙️. Timeline Macro&rdquo; sheet at the bottom, and copy that script. Then go to <strong>Extensions</strong> > <strong>App Scripts</strong>, and paste it. (You may already have this done by copying the sheet!) That&rsquo;s half of it.</p><p>The other half is triggering it automatically. Within the <strong>App Scripts</strong>, on the left sidebar, go to <strong>Triggers</strong> > <strong>Add Trigger</strong> > <strong>Select Event Source</strong> > <strong>Time-Driven</strong>. This will allow you to run the script on a timely basis. Now, how often you want it, that&rsquo;s for you to decide. I like to set a <strong>Day timer</strong> working during the night so i can my results by the morning. And that&rsquo;s it.</p><p>Give it a test run to see if everything is working! If it isn&rsquo;t, take a look at the script, I tried to make it as simple as possible, so you could modify it easily.</p><p>The most common problems typically are:</p><ul><li>Different sheet names</li><li>Changing where the dashboard cells are</li><li>etc.</li></ul><p>Once that&rsquo;s running, your timeline charts will immediately start to fill! :)</p><h4 id=do-you-have-feedback->Do you have feedback? 💬</h4><p>Please send it directly to me! You can reach me via <a href=https://twitter.com/claudiacvlho>Twitter</a>.
+Thank you, folks! Happy new year! 🎉</p></div></article><div class="row pagination"><div class="six columns u-pull-left"><p class=pagintation__title><a href=https://stklauz.github.io/2021-figma-organization/>← Previous post</a></p></div><div class="six columns u-pull-right pagination__next"></div></div></section></main><p class="footer text-center">Copyright © 2024 Cláudia Carvalho</p></body></html>
