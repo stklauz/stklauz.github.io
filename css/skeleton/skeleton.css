@@ -529,6 +529,10 @@ there.
   margin-left: 2rem;
 }
 
+.navbar-item.is-active {
+  border-bottom: 2px solid var(--color-main);
+}
+
 .nav-toggle {
   display: none;
   flex-direction: column;
