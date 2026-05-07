@@ -10,8 +10,9 @@
             <span></span>
         </button>
         <nav id="nav" class="nav navbar-list">
+            {{ $currentURL := .RelPermalink }}
             {{ range .Site.Menus.main }}
-            <a href="{{ .URL }}" class="navbar-item">{{ .Name }}</a>
+            <a href="{{ .URL }}" class="navbar-item{{ if eq $currentURL .URL }} is-active{{ end }}">{{ .Name }}</a>
             {{ end }}
         </nav>
     </div>
