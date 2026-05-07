@@ -38,6 +38,23 @@ hugo server -D
 - The `-D` flag includes draft content.
 - Hugo will watch for changes and live-reload.
 
+## Updating the theme / CSS (common gotcha)
+
+Hugo copies theme assets from `themes/lemon/static/` into `public/` during a build.
+
+- **Edit source files**: change CSS in `themes/lemon/static/...` (or `static/...`), not in `public/`.
+- **Rebuild / preview**:
+
+```bash
+# preview with live reload
+hugo server -D
+
+# or build output into public/
+hugo --minify
+```
+
+- **If you don’t see changes**: do a hard refresh / clear cache (the browser may be serving an older cached CSS file).
+
 ## Build
 
 Build the production site into `public/`:
