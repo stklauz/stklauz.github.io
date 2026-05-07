@@ -1,11 +1,13 @@
 <header id="nav-border" class="header">
-    <a href="/" title="home" class="logo__link">
-        <h1 class="logo__heading">{{ .Site.Title }}</h1>
-        <span class="logo__niceness"></span>
-    </a>
-    <nav id="nav" class="nav navbar-list">
-        {{ range .Site.Menus.main }}
-        <a href="{{ .URL }}" class="navbar-item">{{ .Name }}</a>
-        {{ end }}
-    </nav>
+    <div class="header__inner">
+        <a href="/" title="home" class="logo__link">
+            <h1 class="logo__heading">{{ .Site.Title }}</h1>
+            <span class="logo__niceness"></span>
+        </a>
+        <nav id="nav" class="nav navbar-list">
+            {{ range .Site.Menus.main }}
+            <a href="{{ .URL }}" class="navbar-item">{{ .Name }}</a>
+            {{ end }}
+        </nav>
+    </div>
 </header>
