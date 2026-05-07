@@ -49,7 +49,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 800px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -171,7 +171,8 @@ body {
   font-size: 1.75em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.5;
   font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: var(--color-black); 
+  color: var(--color-black);
+  background-color: var(--color-white);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -502,39 +503,38 @@ there.
 
 
 /* ---------- */
-@media (min-width: 1000px) {
-  .nav {
-    float: right;
-    margin-top: 2rem;
-  }
-}
-
-.navbar-item {
-  margin-right: 2rem;
-}
-@media (min-width: 1000px) {
-  .navbar-item {
-    margin-right: 0;
-    margin-left: 2rem;
-  }
-}
-
-
-
 .header {
-  margin: 2rem 0 4rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--color-gray2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--color-white);
+  z-index: 100;
 }
-@media (min-width: 1000px) {
-  .header {
-    margin: 4rem 0 4rem;
-    padding-bottom: 2rem;
-  }
+
+.header__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header a {
   text-decoration: none;
+}
+
+.header .logo__heading {
+  margin-bottom: 0;
+}
+
+.navbar-item {
+  margin-left: 2rem;
+}
+
+body {
+  padding-top: 10rem;
 }
 
 @keyframes wee {
@@ -579,13 +579,13 @@ img {
   margin-top: 1.5em;
 }
 
-.post__title {
-  margin: 0rem 0 4rem;
+.page-title {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
-@media (min-width: 1000px) {
-  .post__title {
-    margin: 2rem 0 6rem;
-  }
+
+.post__title {
+  margin: 4rem 0 4rem;
 }
 
 .content p,
@@ -629,4 +629,34 @@ li p {
 }
 .pagination__next {
   text-align: right;
+}
+
+/* Work / Case Studies */
+.work__intro {
+  color: var(--color-gray5);
+  margin-bottom: 4rem;
+}
+
+.work__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.work__item {
+  border-top: 1px solid var(--color-gray2);
+  padding: 3rem 0;
+}
+
+.work__item-title {
+  margin-bottom: 0.5rem;
+}
+
+.work__item-description {
+  color: var(--color-gray5);
+  margin-bottom: 1rem;
+}
+
+.work__item-link {
+  font-size: 1.5rem;
 }
