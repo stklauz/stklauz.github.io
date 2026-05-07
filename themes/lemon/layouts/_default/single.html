@@ -4,9 +4,9 @@
     <div class="post__title">
       <h1 class="title is-1">{{ .Title }}</h1>
       <p><time>{{ .PublishDate.Format "January 2, 2006" }}</time> | 
-              {{ .ReadingTime }} {{ if eq .ReadingTime 1 }} minute {{ else }} minutes {{ end }} | {{ range $idx, $category := .Params.categories }}
-              {{"in "}}{{- if ne $idx 0 }}, {{ end }}<a href="{{ "categories/" | relURL }}{{ $category | urlize }}">{{ $category }}</a>
-              {{- end }}</p>
+              {{ .ReadingTime }} {{ if eq .ReadingTime 1 }} minute {{ else }} minutes {{ end }} |
+              {{ partial "category-links.html" . }}
+      </p>
     </div>
 
     <div class="">

@@ -1,0 +1,11 @@
+{{/* Render post categories as "in Design, Product and Others" (linked). */}}
+{{- $catLinks := slice -}}
+{{- range $category := .Params.categories -}}
+  {{- $c := trim $category " \t\n\r" -}}
+  {{- if ne $c "" -}}
+    {{- $catLinks = $catLinks | append (printf `<a href="%s%s">%s</a>` ("categories/" | relURL) ($c | urlize) $c) -}}
+  {{- end -}}
+{{- end -}}
+{{- if gt (len $catLinks) 0 -}}
+  in {{ delimit $catLinks ", " " and " | safeHTML }}
+{{- end -}}
