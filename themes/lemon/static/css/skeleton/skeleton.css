@@ -171,7 +171,8 @@ body {
   font-size: 1.75em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.5;
   font-family: "Work Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: var(--color-black); 
+  color: var(--color-black);
+  background-color: var(--color-white);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -508,7 +509,6 @@ there.
   left: 0;
   right: 0;
   background: var(--color-white);
-  border-bottom: 1px solid var(--color-gray2);
   z-index: 100;
 }
 
@@ -579,13 +579,13 @@ img {
   margin-top: 1.5em;
 }
 
-.post__title {
-  margin: 0rem 0 4rem;
+.page-title {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
-@media (min-width: 1000px) {
-  .post__title {
-    margin: 2rem 0 6rem;
-  }
+
+.post__title {
+  margin: 4rem 0 4rem;
 }
 
 .content p,
@@ -632,10 +632,6 @@ li p {
 }
 
 /* Work / Case Studies */
-.work__heading {
-  margin-bottom: 0.5rem;
-}
-
 .work__intro {
   color: var(--color-gray5);
   margin-bottom: 4rem;

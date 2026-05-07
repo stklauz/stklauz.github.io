@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About me"
 date: 2021-04-24T08:47:11+01:00
 draft: false
 summary: "About myself and about this blog"
@@ -10,8 +10,6 @@ keywords:
 tags:
 categories:
 ---
-## About me
-
 ![Being in Coimbra](/images/klauz_coimbra.jpg)
 
 Hi you :) My name is Cláudia, but most people call me Klauz. I'm a Product Designer based in Portugal.

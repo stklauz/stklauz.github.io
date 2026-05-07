@@ -1,5 +1,7 @@
 {{ define "main" }}
 <div>
+    <h2 class="page-title">{{ .Title }}</h2>
+
     {{ .Content }}
 
     {{- partial "post-lister.html" . -}}
