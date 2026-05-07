@@ -10,14 +10,14 @@ keywords:
 tags:
 categories:
 ---
-![Being in Coimbra](/images/klauz_coimbra.jpg)
+Hi :) I'm Cláudia but most people call me Klauz. I'm a Product Designer based in Cascais, Portugal.
 
-Hi you :) My name is Cláudia, but most people call me Klauz. I'm a Product Designer based in Portugal.
+**I started out 10 years ago, as both a frontend developer and a designer, and I've never really stopped being both.** These days, I'm more focused on wider product roles, researching, strategizing and delivering side-by-side with customer facing and engineering teams. I'm very curious and enjoy experimenting a lot; these days that spills into prototyping, communicating and figuring out what's actually useful.
 
-I'm currently working at [Codacy](https://www.codacy.com/sd) as a Sr. Product Designer, and before that I was working at [Defined.ai](https://www.defined.ai/) as a Designer & Design Manager.
+**I care a lot about collaboration and transparency.** I'm a firm believer that diversity makes both companies and products better.
 
-I've been, behind the scenes, helping measuring product value, evaluating hypotehsis, making product decisions and shipping value to customers.
+**I currently work at [Codacy](https://www.codacy.com/) as a Sr. Product Designer.** I began working at Codacy on a side-project, and through the years I have  been pulled into some of the company's more important bets. Before that, I was at [Defined.ai](https://www.defined.ai/) as Designer & Design Manager, where I was also very involved in product strategy and decision-making.
 
-If you'd like to reach out, feel free to send me a message on [Linkedin](https://www.linkedin.com/in/claudiacvlho/)
+If you want to talk design, tech, or anything in between, [find me on LinkedIn](https://www.linkedin.com/in/claudiacvlho/).
 
-*Last updated: may 2026*
+*Last updated: May 2026*
