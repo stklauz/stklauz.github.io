@@ -16,7 +16,7 @@ Hi :) I'm Cláudia but most people call me Klauz. I'm a Product Designer based i
 
 **I care a lot about collaboration and transparency.** I'm a firm believer that diversity makes both companies and products better.
 
-**I currently work at [Codacy](https://www.codacy.com/) as a Sr. Product Designer.** I began working at Codacy on a side-project, and through the years I have  been pulled into some of the company's more important bets. Before that, I was at [Defined.ai](https://www.defined.ai/) as Designer & Design Manager, where I was also very involved in product strategy and decision-making.
+**I currently work at [Codacy](https://www.codacy.com/) as a Sr. Product Designer.** I began working at Codacy on a side-project, and through the years, I have put in charge of some of the company's most important bets. Before that, I was at [Defined.ai](https://www.defined.ai/) as Designer & Design Manager, where I was also very involved in product strategy and decision-making.
 
 If you want to talk design, tech, or anything in between, [find me on LinkedIn](https://www.linkedin.com/in/claudiacvlho/).
 
