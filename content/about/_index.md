@@ -12,7 +12,7 @@ categories:
 ---
 Hi :) I'm Cláudia but most people call me Klauz. I'm a Product Designer based in Cascais, Portugal.
 
-**I started out 10 years ago, as both a frontend developer and a designer, and I've never really stopped being both.** These days, I'm more focused on wider product roles, researching, strategizing and delivering side-by-side with customer facing and engineering teams. I'm very curious and enjoy experimenting a lot; these days that spills into prototyping, communicating and figuring out what's actually useful.
+**I started out 10 years ago, as both a frontend developer and a designer, and I've never really stopped being both.** These days, I'm more focused on wider product roles, researching, strategizing and delivering side-by-side with customer facing and engineering teams. I'm very curious and enjoy experimenting a lot; these days that spills into AI, prototyping, analysing, and validating assumptions.
 
 **I care a lot about collaboration and transparency.** I'm a firm believer that diversity makes both companies and products better.
 
