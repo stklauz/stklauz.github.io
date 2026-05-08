@@ -4,24 +4,78 @@
             <h1 class="logo__heading">{{ .Site.Title }}</h1>
             <span class="logo__niceness"></span>
         </a>
-        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <nav id="nav" class="nav navbar-list">
-            {{ $currentURL := .RelPermalink }}
-            {{ range .Site.Menus.main }}
-            <a href="{{ .URL }}" class="navbar-item{{ if eq $currentURL .URL }} is-active{{ end }}">{{ .Name }}</a>
-            {{ end }}
-        </nav>
+        <div class="header__trail">
+            <nav id="nav" class="nav navbar-list">
+                {{ $currentURL := .RelPermalink }}
+                {{ range .Site.Menus.main }}
+                <a href="{{ .URL }}" class="navbar-item{{ if eq $currentURL .URL }} is-active{{ end }}">{{ .Name }}</a>
+                {{ end }}
+            </nav>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M20 14.7A8.5 8.5 0 1 1 9.3 4 6.8 6.8 0 0 0 20 14.7z"></path>
+                </svg>
+                <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <line x1="12" y1="2" x2="12" y2="5"></line>
+                    <line x1="12" y1="19" x2="12" y2="22"></line>
+                    <line x1="2" y1="12" x2="5" y2="12"></line>
+                    <line x1="19" y1="12" x2="22" y2="12"></line>
+                    <line x1="4.9" y1="4.9" x2="7" y2="7"></line>
+                    <line x1="17" y1="17" x2="19.1" y2="19.1"></line>
+                    <line x1="4.9" y1="19.1" x2="7" y2="17"></line>
+                    <line x1="17" y1="7" x2="19.1" y2="4.9"></line>
+                </svg>
+            </button>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </div>
 </header>
 <script>
-    document.querySelector('.nav-toggle').addEventListener('click', function () {
-        var nav = document.querySelector('.navbar-list');
+    var navToggle = document.querySelector('.nav-toggle');
+    var nav = document.querySelector('.navbar-list');
+    var themeToggle = document.getElementById('theme-toggle');
+    var themeMeta = document.getElementById('theme-color-meta');
+    var darkMedia = window.matchMedia('(prefers-color-scheme: dark)');
+
+    function getEffective() {
+        var stored = null;
+        try { stored = localStorage.getItem('themePreference'); } catch (e) {}
+        if (stored === 'light' || stored === 'dark') return stored;
+        return darkMedia.matches ? 'dark' : 'light';
+    }
+
+    function applyTheme(effective) {
+        document.documentElement.setAttribute('data-theme', effective);
+        if (themeMeta) {
+            themeMeta.setAttribute('content', effective === 'dark' ? themeMeta.dataset.dark : themeMeta.dataset.light);
+        }
+    }
+
+    function setTheme(effective) {
+        try { localStorage.setItem('themePreference', effective); } catch (e) {}
+        applyTheme(effective);
+    }
+
+    navToggle.addEventListener('click', function () {
         var isOpen = nav.classList.toggle('is-open');
         this.setAttribute('aria-expanded', isOpen);
         this.classList.toggle('is-open', isOpen);
     });
+
+    themeToggle.addEventListener('click', function () {
+        setTheme(getEffective() === 'dark' ? 'light' : 'dark');
+    });
+
+    darkMedia.addEventListener('change', function () {
+        var stored = null;
+        try { stored = localStorage.getItem('themePreference'); } catch (e) {}
+        if (!stored) applyTheme(darkMedia.matches ? 'dark' : 'light');
+    });
+
+    applyTheme(getEffective());
 </script>

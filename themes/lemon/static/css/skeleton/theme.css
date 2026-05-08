@@ -1,0 +1,92 @@
+:root {
+  --theme-track-bg: var(--color-gray1);
+  --theme-icon-idle: var(--color-main);
+  --theme-icon-active: var(--color-main);
+}
+
+html[data-theme="dark"] {
+  --color-black: #f3f4f6;
+  --color-gray5: #9ca3af;
+  --color-gray4: #6b7280;
+  --color-gray3: #4b5563;
+  --color-gray2: #374151;
+  --color-gray1: #1f2937;
+  --color-white: #111827;
+  --shadow-navbar: 0 6px 18px -6px rgba(0, 0, 0, 0.6);
+
+  --theme-track-bg: rgba(255, 255, 255, 0.07);
+  --theme-icon-idle: var(--color-main);
+  --theme-icon-active: var(--color-main);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 999px;
+  background: none;
+  border: none;
+  color: var(--theme-icon-idle);
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  transition: background 0.15s;
+}
+
+.theme-toggle:hover {
+  background: var(--theme-track-bg);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--color-main);
+  outline-offset: 2px;
+}
+
+.theme-toggle svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  fill: none;
+  stroke: var(--color-main);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.theme-toggle__moon path {
+  fill: var(--color-main);
+  stroke: none;
+}
+
+/* show sun in light mode, moon in dark mode */
+html[data-theme="light"] .theme-toggle__moon { display: none; }
+html[data-theme="dark"]  .theme-toggle__sun { display: none; }
+
+/* Logos — white in dark mode */
+html[data-theme="dark"] .work__item-image {
+  filter: brightness(0) invert(1);
+  opacity: 0.85;
+}
+
+@media (max-width: 600px) {
+  .header__trail {
+    gap: 0.8rem;
+  }
+
+  .theme-radios {
+    margin-left: auto;
+  }
+}
