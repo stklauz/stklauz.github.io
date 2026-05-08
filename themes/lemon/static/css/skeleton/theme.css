@@ -76,10 +76,15 @@ html[data-theme="light"] .theme-toggle__moon { display: none; }
 html[data-theme="dark"]  .theme-toggle__sun { display: none; }
 
 /* Logos — white in dark mode */
-html[data-theme="dark"] .work__item-image {
+html[data-theme="dark"] .work__item-image:not(.neevo-logo) {
   filter: brightness(0) invert(1);
   opacity: 0.85;
 }
+
+/* Neevo has dedicated light/dark SVGs */
+.neevo-logo--dark { display: none; }
+html[data-theme="dark"] .neevo-logo--light { display: none; }
+html[data-theme="dark"] .neevo-logo--dark { display: block; }
 
 @media (max-width: 600px) {
   .header__trail {
