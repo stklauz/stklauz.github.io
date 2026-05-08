@@ -92,11 +92,6 @@ html[data-theme="dark"] .hero__cta:hover {
   color: var(--color-black);
 }
 
-/* Logo turns white on hover in dark mode */
-html[data-theme="dark"] .logo__link:hover .logo__heading {
-  color: var(--color-black);
-}
-
 @media (max-width: 600px) {
   .header__trail {
     gap: 0.8rem;

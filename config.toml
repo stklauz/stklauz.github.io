@@ -13,6 +13,9 @@ theme = "lemon"
   description = "My name is Cláudia, but most people call me Klauz. I’m a Product Designer based in Portugal."
   keywords = "UX Designer, design, product management, blog, Cláudia Carvalho, stklauz"
   linkedin = "https://www.linkedin.com/in/claudiacvlho"
+  themeColorLight = "#ffffff"
+  themeColorDark = "#111827"
+  maskIconColor = "#266DD3"
 [author]
   name = "Cláudia Carvalho" # Used by the foot copyright
 [menu]
