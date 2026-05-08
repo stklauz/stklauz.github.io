@@ -733,10 +733,9 @@ li p {
 
 .hero__role {
   font-size: 1.4rem;
-  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  color: var(--color-main);
+  color: var(--color-gray4) !important;
   margin-bottom: 1.6rem;
 }
 
