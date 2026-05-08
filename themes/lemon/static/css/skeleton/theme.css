@@ -86,6 +86,17 @@ html[data-theme="dark"] .work__item-image:not(.neevo-logo) {
 html[data-theme="dark"] .neevo-logo--light { display: none; }
 html[data-theme="dark"] .neevo-logo--dark { display: block; }
 
+/* --color-white flips to dark background in dark mode; restore true white on primary buttons */
+html[data-theme="dark"] .hero__cta,
+html[data-theme="dark"] .hero__cta:hover {
+  color: var(--color-black);
+}
+
+/* Logo turns white on hover in dark mode */
+html[data-theme="dark"] .logo__link:hover .logo__heading {
+  color: var(--color-black);
+}
+
 @media (max-width: 600px) {
   .header__trail {
     gap: 0.8rem;
